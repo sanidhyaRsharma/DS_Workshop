@@ -11,4 +11,4 @@ def question_1():
 
 @app.route('/question_2', methods=['GET'])
 def question_2():
-	return render_template('question_2.html', title = "Kadane's Algorithm", q2_active="active")
+	return render_template('question_2.html', title = "Maximum Sum sub-array", q2_active="active")
