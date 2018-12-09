@@ -3,5 +3,5 @@ from flask import render_template
 
 @app.route('/', methods=['GET'])
 def index():
-	return "This is a test"
+	return render_template("base.html", title = "Home")
 	

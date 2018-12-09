@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+
+
+<html>
+<head>
+	<title> {{ title }} | DS Workshop </title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="{{url_for('static',filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='assets/vendor/font-awesome/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='assets/vendor/linearicons/style.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='assets/vendor/chartist/css/chartist-custom.css')}}">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="{{url_for('static',filename='assets/css/main.css')}}">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="{{url_for('static',filename='assets/css/demo.css')}}">
+</head>
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="{{url_for('index')}}"><img src="{{url_for('static', filename='images/coc_logo_with_name.png')}}"></a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Page 1</a></li>
+				<li><a href="#">Page 2</a></li>
+				<li><a href="#">Page 3</a></li>
+			</ul>
+		</div>
+	</nav> 
+	<!-- END NAVBAR -->
+	<div class="container-fluid">
+		<div class = "jumbotron">
+			<h1> Welcome to DS Workshop!</h1>
+			<h3 class="well"> “Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live”</h3>
+			{% block content %}	{% endblock %}
+		</div>
+	</div>
+</body>
+</html>
