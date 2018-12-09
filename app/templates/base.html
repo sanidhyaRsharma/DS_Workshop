@@ -36,10 +36,13 @@
 	<!-- END NAVBAR -->
 	<div class="container-fluid">
 		<div class = "jumbotron">
-			<h1> Welcome to DS Workshop!</h1>
-			<h3 class="well"> “Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live”</h3>
-			{% block content %}	{% endblock %}
+			<div class="well">
+				<h1 class="text-center"> Welcome to DS Workshop!</h1>
+				<h5 class="text-center"> “Always code as if the guy who ends up maintaining your code will be a violent psychopath <br/>who knows where you live”</h5>
+			</div>
 		</div>
 	</div>
+	{% block content %}	{% endblock %}
+
 </body>
 </html>
