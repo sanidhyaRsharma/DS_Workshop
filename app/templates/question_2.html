@@ -1,47 +1,51 @@
 {% extends 'base.html' %}
 {% block content %}
     <div class="container">
-        <h1>Question Title</h1>
+        <h1>Maximum Sum sub-array</h1>
         <hr/>
 
-        <p>Description Lorem IpsuM<br/>
-        
-            The standard Lorem Ipsum passage, used since the 1500s
+        <p>The problem: <br/>
+            <br/>
+            You are given an array of integers. Your task is to find a sub-array of the given array which has the maximum sum <br/>
+            A sub-array of a given array is a <i>contiguous</i> sub-section of the given array. For example, <br/>
+            <br/>
+            Given array:<br/>
+            1 2 3 4 5 6 7 8 9 <br/>
+            Sample sub-arrays:<br/>
+            4 5 6 7<br/>
+            2 3 <br/>
+            8 <br/>
+            6 7 8 9<br/>
+            <br/>
 
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            <br/>
-            <br/>
-
-            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-            
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-            
-            1914 translation by H. Rackham
-
-            <br/>
-            <br/>
-            Be free to insert photos, vids, etc in between if you feel like doing so.
+            You are supposed to find such a sub-array whose sum of elements is maximum.
         </p>
         <hr/>
         <h3>Input</h3>
-        <ul>
+        <p>
+            The first line of input contains an integer <b>T</b> denoting the number of test cases. The description of T test cases follows. The first line of each test case contains a single integer <b>N</b> denoting the size of array. The second line contains N space-separated integers <b>A1, A2, ..., AN</b> denoting the elements of the array.<br/>
+        </p>
+<!--         <ul>
             <li>Input condition 1</li>
             <li>Input condition 2</li>
             <li>Input condition 3</li>
-        </ul>
+        </ul> -->
         <hr/>
         <h3>Output</h3>
-        <ul>
+        <p>
+            Print the maximum sum of the contiguous sub-array in a separate line for each test case.<br/>
+        </p>
+        <!-- <ul>
             <li>Output condition 1</li>
             <li>Output condition 2</li>
             <li>Output condition 3</li>
-        </ul>
+         </ul>-->
         <hr/>
         <h3>Constraints</h3>
         <ul>
-            <li> condition 1</li>
-            <li> condition 2</li>
-            <li> condition 3</li>
+            <li> 1 ≤ T ≤ 200</li>
+            <li>1 ≤ N ≤ 1000</li>
+            <li>-100 ≤ A[i] <= 100</li>
         </ul>
         <hr/>
         <h3>Example</h3>        <hr/>
@@ -49,23 +53,21 @@
             <div class="col-md-6 h-25">
                 <h4>Input</h4>
                 <pre class="sample_text" style="background-color:white; height:200px;">
-Sample Line 1
-Sample Line 2
-Sample Line 3
-Sample Line 4
+2
+3
+1 2 3
+4
+-1 -2 -3 -4
                 </pre>
             </div>
             <div class="col-md-6 h-25">
                 <h4>Output</h4>
                 <pre class="sample_text" style="background-color:white; height:200px;">
-Sample Line 1
-Sample Line 2
-Sample Line 3
-Sample Line 4
-Adjust height accordingly
+6
+-1
                 </pre>
             </div>
-            <p>Some Explanation if necessary (optional)</p>
+            <!-- <p>Some Explanation if necessary (optional)</p> -->
         </div>
         <hr/>
         <form method="POST" action="#" class="container" style="width:250px;">
