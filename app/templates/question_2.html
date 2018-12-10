@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+        <h1>Maximum Sum sub-array</h1>
+        <hr/>
+
+        <p>The problem: <br/>
+            <br/>
+            You are given an array of integers. Your task is to find a sub-array of the given array which has the maximum sum <br/>
+            A sub-array of a given array is a <i>contiguous</i> sub-section of the given array. For example, <br/>
+            <br/>
+            Given array:<br/>
+            1 2 3 4 5 6 7 8 9 <br/>
+            Sample sub-arrays:<br/>
+            4 5 6 7<br/>
+            2 3 <br/>
+            8 <br/>
+            6 7 8 9<br/>
+            <br/>
+
+            You are supposed to find such a sub-array whose sum of elements is maximum.
+        </p>
+        <hr/>
+        <h3>Input</h3>
+        <p>
+            The first line of input contains an integer <b>T</b> denoting the number of test cases. The description of T test cases follows. The first line of each test case contains a single integer <b>N</b> denoting the size of array. The second line contains N space-separated integers <b>A1, A2, ..., AN</b> denoting the elements of the array.<br/>
+        </p>
+<!--         <ul>
+            <li>Input condition 1</li>
+            <li>Input condition 2</li>
+            <li>Input condition 3</li>
+        </ul> -->
+        <hr/>
+        <h3>Output</h3>
+        <p>
+            Print the maximum sum of the contiguous sub-array in a separate line for each test case.<br/>
+        </p>
+        <!-- <ul>
+            <li>Output condition 1</li>
+            <li>Output condition 2</li>
+            <li>Output condition 3</li>
+         </ul>-->
+        <hr/>
+        <h3>Constraints</h3>
+        <ul>
+            <li> 1 ≤ T ≤ 200</li>
+            <li>1 ≤ N ≤ 1000</li>
+            <li>-100 ≤ A[i] <= 100</li>
+        </ul>
+        <hr/>
+        <h3>Example</h3>        <hr/>
+        <div class="row">
+            <div class="col-md-6 h-25">
+                <h4>Input</h4>
+                <pre class="sample_text" style="background-color:white; height:200px;">
+2
+3
+1 2 3
+4
+-1 -2 -3 -4
+                </pre>
+            </div>
+            <div class="col-md-6 h-25">
+                <h4>Output</h4>
+                <pre class="sample_text" style="background-color:white; height:200px;">
+6
+-1
+                </pre>
+            </div>
+            <!-- <p>Some Explanation if necessary (optional)</p> -->
+        </div>
+        <hr/>
+        <form method="POST" action="#" class="container" style="width:250px;">
+            <div class="form-group">
+                <select class="form-control" name="lang">
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="py">Python</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="file" class="form-control" name="submit_file" />
+            </div>
+            <center>
+                <button class="btn btn-primary">Submit</button>
+            </center>
+        </form>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+{% endblock %}

@@ -1,47 +1,32 @@
 {% extends 'base.html' %}
 {% block content %}
     <div class="container">
-        <h1>Question Title</h1>
+        <h1>Trapping Rainwater Problem</h1>
         <hr/>
 
-        <p>Description Lorem IpsuM<br/>
-        
-            The standard Lorem Ipsum passage, used since the 1500s
+        <p>
+            Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
+        </p>
+        <img src="/static/images/rainwatertrap.png" alt="illustration"  class="d-block mx-auto"/>
+        <p>
 
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            <br/>
-            <br/>
-
-            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-            
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-            
-            1914 translation by H. Rackham
-
-            <br/>
-            <br/>
-            Be free to insert photos, vids, etc in between if you feel like doing so.
         </p>
         <hr/>
         <h3>Input</h3>
         <ul>
-            <li>Input condition 1</li>
-            <li>Input condition 2</li>
-            <li>Input condition 3</li>
+            <li>Integet T denoting number of test cases</li>
+            <li>For each test case, Integet N denoting the length of the array</li>
+            <li>For each test case, following N, a list of N integers</li>
+
         </ul>
         <hr/>
         <h3>Output</h3>
         <ul>
-            <li>Output condition 1</li>
-            <li>Output condition 2</li>
-            <li>Output condition 3</li>
+            <li>T integers denoting the amount of water trapped for each testcase</li>
         </ul>
         <hr/>
         <h3>Constraints</h3>
         <ul>
-            <li> condition 1</li>
-            <li> condition 2</li>
-            <li> condition 3</li>
         </ul>
         <hr/>
         <h3>Example</h3>        <hr/>
@@ -49,26 +34,27 @@
             <div class="col-md-6 h-25">
                 <h4>Input</h4>
                 <pre class="sample_text" style="background-color:white; height:200px;">
-Sample Line 1
-Sample Line 2
-Sample Line 3
-Sample Line 4
+2
+7
+1,5,2,3,1,7,2
+7
+3,0,0,2,0,4
                 </pre>
             </div>
             <div class="col-md-6 h-25">
                 <h4>Output</h4>
                 <pre class="sample_text" style="background-color:white; height:200px;">
-Sample Line 1
-Sample Line 2
-Sample Line 3
-Sample Line 4
-Adjust height accordingly
-                </pre>
+9
+10
+              </pre>
             </div>
-            <p>Some Explanation if necessary (optional)</p>
+            <p>
+
+
+            </p>
         </div>
         <hr/>
-        <form method="post" enctype="multipart/form-data" action="{{ url_for('submit') }}" class="container" style="width:250px;">
+        <!-- <form method="post" enctype="multipart/form-data" action="" class="container" style="width:250px;">
             <input type="hidden" value="1" />
             <div class="form-group">
                 <select class="form-control" name="lang">
@@ -83,7 +69,7 @@ Adjust height accordingly
             <center>
                 <input type="submit" value="Submit" class="btn btn-primary btn-sm btn-block" />
             </center>
-        </form>
+        </form> -->
         <br/>
         <br/>
         <br/>
