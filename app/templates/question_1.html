@@ -68,7 +68,8 @@ Adjust height accordingly
             <p>Some Explanation if necessary (optional)</p>
         </div>
         <hr/>
-        <form method="POST" action="#" class="container" style="width:250px;">
+        <form method="post" enctype="multipart/form-data" action="{{ url_for('submit') }}" class="container" style="width:250px;">
+            <input type="hidden" value="1" />
             <div class="form-group">
                 <select class="form-control" name="lang">
                     <option value="c">C</option>
@@ -80,7 +81,7 @@ Adjust height accordingly
                 <input type="file" class="form-control" name="submit_file" />
             </div>
             <center>
-                <button class="btn btn-primary">Submit</button>
+                <input type="submit" value="Submit" class="btn btn-primary btn-sm btn-block" />
             </center>
         </form>
         <br/>

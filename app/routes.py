@@ -6,5 +6,5 @@ def index():
 	return render_template("base.html", title = "Home")
 
 @app.route('/question_1', methods=['GET'])
-def question_1():
+def index():
 	return render_template("question_1.html", title = "Trapping Rainwater")
